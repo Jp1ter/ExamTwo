@@ -1,0 +1,134 @@
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  @media (max-width: 957px) {
+    .container {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  .header {
+    padding: 16px 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .header__btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .header__btn {
+    padding: 8px;
+    min-height: 40px;
+    min-width: 80px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .header__btn:hover {
+    color: #fff;
+    background: #57ad56;
+    border-color: #57ad56;
+  }
+  
+  .header__btn--sigh-in {
+    border: 1px solid #e0e0e0;
+    margin-right: 16px;
+  }
+  
+  .header__btn--register {
+    background: #262626;
+    margin-right: 27px;
+    color: #fff;
+  }
+  
+  .header__cart:hover path {
+    fill: #57ad56;
+  }
+  
+  .header__cart-icon {
+    width: 18.95px;
+    height: 21.74px;
+  }
+  
+  .header__cart-icon path {
+    -webkit-transition: fill 0.3s;
+    -o-transition: fill 0.3s;
+    transition: fill 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .header__logo {
+      width: 105px;
+      height: 11px;
+    }
+    .header__btn {
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header__cart {
+      display: none;
+    }
+    .header__btn {
+      font-size: 11px;
+      line-height: 13px;
+    }
+    .header__btn--sigh-in {
+      margin-right: 12px;
+    }
+    .header__btn--register {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .header__btn--sigh-in {
+      margin-right: 5px;
+    }
+  }
