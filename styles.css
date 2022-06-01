@@ -1,9 +1,16 @@
+button {
+    color: currentColor;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
 .container {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 8px;
-  }
-  
+}
+
   .visually-hidden {
     position: absolute;
     width: 1px;
